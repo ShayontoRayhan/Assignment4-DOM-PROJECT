@@ -4,4 +4,4 @@
 
 ### Email: (rayhanshayonto@gmail.com)
 
-[ Live url](https://https://frolicking-liger-e3c017.netlify.app/)
+[ Live url](https://frolicking-liger-e3c017.netlify.app/)
