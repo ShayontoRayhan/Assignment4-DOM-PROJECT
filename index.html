@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Recipe Gallery</title>
+        <link rel="stylesheet" href="styles.css" />
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-upper">
+            <img src="logo.png" alt="Recipe Gallery Logo" />
+        </div>
+        <div class="hero-inner">
+           
+            <h1>Search Your Favorite Recipe</h1>
+            <p>A handful of simple ingredients, plenty of flavourful recipes.</p>
+            <div class="search-wrap">
+                <input id="search" type="search" placeholder="Search..." aria-label="Search recipes" />
+                <button id="clear" type="button" aria-label="Clear search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div id="heroSpinner" class="hero-spinner" aria-hidden="true" aria-live="polite">
+                <div class="spinner" aria-hidden="true"></div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2 class="section-title">Latest Recipes</h2>
+        <div id="recipes" class="grid"></div>
+        <div id="gridSpinner" class="grid-spinner" aria-hidden="true" aria-live="polite">
+            <div class="spinner small" aria-hidden="true"></div>
+        </div>
+    </main>
+
+    <div id="modal" class="modal" aria-hidden="true">
+        <div class="modal-body">
+            <button id="modalClose" class="close">×</button>
+            <img id="modalImg" src="" alt="" />
+            <h3 id="modalTitle"></h3>
+            <p id="modalDesc"></p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div>
+            <p>Copyright © 2023 - All rights reserved</p>
+        </div>
+        <div class="social-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
